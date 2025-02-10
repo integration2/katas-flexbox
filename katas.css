@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+.ctnFlex {
+    display: flex;
+}
+
+/* Exercice A1
+ * En utilisant justify-content sur le conteneur flex
+ * aligner les trois items à droite.
+ * ================================= */
+.ctnFlex.A1 {
+    justify-content: flex-end;
+}
+
+
+/* Exercice A2
+ * En utilisant flex-direction sur le conteneur flex
+ * aligner les trois items à droite dans l'ordre inverse.
+ * ====================================================== */
+.ctnFlex.A2 {}
+
+
+/* Exercice A3
+ * En utilisant justify-content
+ * répartissez les items également dans l'espace horizontal
+ * en appuyant Le premier et le dernier item sur les bords du conteneur.
+ * ===================================================================== */
+.ctnFlex.A3 {}
+
+/* Exercice A4
+ * En utilisant justify-content
+ * répartissez les items également dans l'espace horizontal
+ * SANS appuyer le premier et le dernier item sur les bords du conteneur.
+ * ===================================================================== */
+.ctnFlex.A4 {}
+
+
+/* Exercice A5
+ * Par défaut la valeur de la propriété flex-wrap du conteneur Flex est no-wrap
+ * Par défaut la valeur de la propriété align-items est stretch
+ * Changer la valeur de ces propriétés et utiliser la propriété justify-content
+ * pour obtenir deux rangées d'items également répartis.
+ *
+ * Sur les items Flex: utiliser la propriété flex-basis pour leur donner
+ * une largeur de 80 pixels et ajouter une marge de quelques pixels.
+ * ===================================================== */
+.ctnFlex.A5 {
+    min-height: 250px;
+
+}
+
+.A5 .item {}
+
+
+/* Exercice A6
+ * Reprenez les règles définies à l'exercice précédent
+ * et ajouter la propriété align-content pour que
+ * les 2 rangées s'appuient en haut du conteneur.
+ * ============================================= */
+.ctnFlex.A6 {
+    min-height: 250px;
+
+
+}
+
+.A6 .item {
+    min-width: 80px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* Exercice A7
+ * Reprenez les règles définies à l'exercice précédent
+ * mais cette fois, régler la propriété align-content
+ * pour que les 2 rangées s'appuient
+ * l'une en haut et l'autre en bas du conteneur.
+ * ============================================ */
+.ctnFlex.A7 {
+    min-height: 250px;
+
+
+}
+
+.A7 .item {
+    min-width: 80px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* Exercice B1
+ * Placer le premier item seul à gauche à l'aide d'un margin-right.
+ * =============================================================== */
+.B1 .marge {}
+
+
+/* Exercice B2
+ * Placer les items flex au centre à l'aide de
+ * justify-content et align-items.
+ * ============================== */
+.B2 {
+    min-height: 200px;
+
+
+}
+
+
+/* Exercice B3
+ * Placer l'item flex au centre à l'aide des marges automatiques.
+ * ============================================================== */
+.B3 {
+    min-height: 200px;
+}
+
+.B3 .item {}
+
+
+/* Exercice C1 - flex-basis
+ * Le flex-grow est à 0 (valeur par défaut: pas d'expansion possible)
+ * Le flex-shrink est à 1 (valeur par défaut: compression possible)
+ * Changer la valeur de flex-basis pour que
+ * nos boîtes n'aient pas de largeur initiale
+ * et qu'elles occupent leur largeur minimum.
+ * (vous obtiendrez ce résultat par la valeur 0)
+ * ========================================== */
+.C1 .item {
+    flex: 0 1 auto;
+
+}
+
+
+/* Exercice C2- flex-basis
+ * Si nous donnons à flex-basis la valeur 0, nos boîtes n'ont pas de largeur initiale.
+ * Changer la valeur de flex-grow pour que les boites puissent grossir également
+ * à l'intérieur du conteneur.
+ * =========================== */
+.C2 .item {
+    flex: 0 1 0;
+
+}
+
+
+/* Exercice C3 - flex-basis
+ * flex-grow est à 0 donc, pas d'expansion
+ * Changer la valeur du flex-basis pour que l'espace disponible
+ * soit distribué en prenant en compte la taille du contenu de chaque item.
+ * ========================================================= */
+.C3 .item {
+    flex: 0 1 0;
+
+}
+
+
+/* Exercice C4 - flex-shrink
+ * flex-grow est à 0 donc, pas d'expansion
+ * flex-basis à auto: chaque item occupe la taille maximum de son contenu.
+ * Annuler la compression possible (flex-shrink)
+ * Pour voir les items déborder leur conteneur.
+ * ============================================ */
+.C4 .item {
+    flex: 0 1 auto;
+
+}
+
+
+/* Exercice C5 - flex-shrink et flex-basis
+ * Ajuster le flex-grow et le flex-basis pour que
+ * chaque item occupe la taille minimum de son contenu.
+ * =========================== */
+.C5 .item {
+    flex: 0 1 auto;
+
+}
+
+/* Exercice C6 - width versus flex-basis
+ * Ajouter un width ou un max-width de manière
+ * à ce que chaque boite soit de largeur égale (1/3).
+ * ================================================= */
+.C6 .item {
+    flex: 1 1 auto;
+
+
+}
+
+
+/* Exercice C7 - flex-grow
+ * Changer la valeur du flex-grow de manière
+ * à ce que la boite qui porte la classe "deux"
+ * TENTE d'occuper 2x plus d'espace que les 2 autres.
+ * =========================== */
+.C7 .item {
+    flex: 0 1 auto;
+}
+
+.C7 .deux {}
+
+
+/* Exercice C8 - flex-grow
+ * Changer la valeur du flex-grow de manière
+ * à ce que la boite qui porte la classe "deux"
+ * TENTE d'occuper 2x plus d'espace que les 2 autres
+ *
+ * Cette fois, ajouter à tous les items un min-width
+ * de manière à ce que la proportion 2x plus que les 2 autres
+ * s'appliquent réellement.
+ * =========================== */
+.C8 .item {
+    flex: 0 1 auto;
+
+}
+
+.C8 .deux {}
+
+
+/* Exercice D1
+ * Le premier et le troisième item doivent s'aligner en haut à gauche
+ * Le deuxième item doit se placer en bas à droite.
+ * ============ */
+.ctnFlex.D1 {
+    min-height: 200px;
+
+
+}
+
+.D1 .item:nth-child(2) {}
+
+
+/* Exercice D2
+ * Pour créer une mise en page classique,
+ * Compléter les règles ci-dessous
+ * ==================================== */
+.ctnFlex.D2 {
+    min-height: 400px;
+
+}
+
+.D2 .item {}
+
+.D2 .aside1,
+.D2 .aside2 {}
+
+.D2 .main {}
+
+.D2 .header,
+.D2 .footer {
+    background-color: yellow;
+    width: 100%;
+}
+
+.D2 .aside2,
+.D2 .footer {}
+
+/* ======================================== */
+/* Styles de base */
+body {
+    padding: 20px;
+    font: 1em Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.ctnFlex {
+    border: 5px solid rgb(111, 41, 97);
+    border-radius: .5em;
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    padding: 10px;
+    background-color: #ddd;
+    border: 2px solid rgba(111, 41, 97, .5);
+}
+
+code {
+    color: purple;
+    font-weight: bold;
+    font-size: 1.25em;
+    background-color: #ddd;
+    padding: 8px;
+}
+
+h2 {
+    margin: 5rem 0 2rem;
+    border-bottom: 1px solid purple;
+}
+
+h2+h3 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}

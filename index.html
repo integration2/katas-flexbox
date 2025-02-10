@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Katas de Flexbox</title>
+    <link rel="stylesheet" href="katas.css">
+</head>
+<body>
+<h1>katas de flexbox</h1>
+
+<h2>A. Les alignements</h2>
+
+<h3>Exercice A1</h3>
+<p>En utilisant justify-content sur le conteneur flex aligner les trois items à droite.</p>
+<div class="ctnFlex A1">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+</div>
+
+<h3>Exercice A2</h3>
+<p>En utilisant flex-direction sur le conteneur flex, aligner les trois items à droite dans l'ordre inverse.</p>
+<div class="ctnFlex A2">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+</div>
+
+<h3>Exercice A3</h3>
+<p>En utilisant justify-content répartissez les items également dans l'espace horizontal en appuyant le premier et le dernier item sur les bords du conteneur.</p>
+<div class="ctnFlex A3">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+    <div class="item">🥕</div>
+    <div class="item">🥑</div>
+</div>
+
+<h3>Exercice A4</h3>
+<p>En utilisant justify-content répartissez les items également dans l'espace horizontal SANS appuyer le premier et le dernier item sur les bords du conteneur.</p>
+<div class="ctnFlex A4">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+    <div class="item">🥕</div>
+    <div class="item">🥑</div>
+</div>
+
+<h3>Exercice A5</h3>
+<p>Par défaut la valeur de la propriété flex-wrap du conteneur Flex est no-wrap et la valeur de la propriété align-items est stretch.
+    <br>Changer la valeur de ces propriétés et utiliser la propriété justify-content pour obtenir deux rangées d'items également répartis.</p>
+<p> <strong>Sur les items Flex</strong>: utiliser la propriété flex-basis pour leur donner
+    une largeur de 80 pixels et ajouter une marge de quelques pixels.</p>
+<div class="ctnFlex A5">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+    <div class="item">🥕</div>
+    <div class="item">🥑</div>
+    <div class="item">🌶️</div>
+    <div class="item">🍄</div>
+    <div class="item">🍆</div>
+    <div class="item">🥔</div>
+    <div class="item">🍏</div>
+</div>
+
+<h3>Exercice A6</h3>
+<p>Reprenez les règles définies à l'exercice précédent et ajouter la propriété align-content pour que les 2 rangées s'appuient en haut du conteneur.</p>
+<div class="ctnFlex A6">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+    <div class="item">🥕</div>
+    <div class="item">🥑</div>
+    <div class="item">🌶️</div>
+    <div class="item">🍄</div>
+    <div class="item">🍆</div>
+    <div class="item">🥔</div>
+    <div class="item">🍏</div>
+</div>
+
+<h3>Exercice A7</h3>
+<p>Reprenez les règles définies à l'exercice précédent mais cette fois, régler la propriété align-content pour que les 2 rangées s'appuient l'une en haut et l'autre en bas du conteneur.</p>
+<div class="ctnFlex A7">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+    <div class="item">🥕</div>
+    <div class="item">🥑</div>
+    <div class="item">🌶️</div>
+    <div class="item">🍄</div>
+    <div class="item">🍆</div>
+    <div class="item">🥔</div>
+    <div class="item">🍏</div>
+</div>
+
+
+<h2>B. Les marges</h2>
+
+<h3>Exercice B1</h3>
+<p>Placer le premier item seul à gauche à l'aide d'un margin-right</p>
+<div class="ctnFlex B1">
+    <div class="item marge">Citron</div>
+    <div class="item">Cerises</div>
+    <div class="item">Kiwi</div>
+</div>
+
+<h3>Exercice B2</h3>
+<p>Placer les items flex au centre à l'aide de justify-content et align-items.</p>
+<div class="ctnFlex B2">
+    <div class="item">Citron</div>
+    <div class="item">Cerises</div>
+    <div class="item">Kiwi</div>
+</div>
+
+<h3>Exercice B3</h3>
+<p>Placer l'item flex au centre à l'aide des marges automatiques.</p>
+<div class="ctnFlex B3">
+    <div class="item">Cerises</div>
+</div>
+
+
+<h2>C. Le dimensionnement des items flex</h2>
+
+<h3>Exercice C1- flex-basis</h3>
+<p>Le flex-grow est à 0 (valeur par défaut: pas d'expansion possible). <br>
+    Le flex-shrink est à 1 (valeur par défaut: compression possible).<br>
+    Changer la valeur de flex-basis pour que nos boîtes n'aient pas de largeur initiale
+    et qu'elles occupent leur largeur minimum. <br>
+    (Vous obtiendrez ce résultat par la valeur 0)</p>
+<div class="ctnFlex C1">
+    <div class="item">Orange potato</div>
+    <div class="item">Sprout tomato pea</div>
+    <div class="item">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea.</div>
+</div>
+
+<h3>Exercice C2- flex-basis</h3>
+<p>Si nous donnons à flex-basis la valeur 0, nos boîtes n'ont pas de largeur initiale. <br>Changer la valeur de flex-grow pour que les boites puissent grossir également à l'intérieur du conteneur. </p>
+<div class="ctnFlex C2">
+    <div class="item">Orange potato</div>
+    <div class="item">Sprout tomato pea</div>
+    <div class="item">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea.</div>
+</div>
+
+<h3>Exercice C3- flex-basis</h3>
+<p>flex-grow est à 0 donc, pas d'expansion. <br>Changer la valeur du flex-basis pour que l'espace disponible soit distribué en prenant en compte la taille du contenu de chaque item.</p>
+<div class="ctnFlex C3">
+    <div class="item">Orange potato</div>
+    <div class="item">Sprout tomato pea</div>
+    <div class="item">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea.</div>
+</div>
+
+<h3>Exercice C4- flex-shrink</h3>
+<p>flex-grow est à 0 donc, pas d'expansion. <br>flex-basis à auto: chaque item occupe la taille maximum de son contenu. <br>Annuler la compression possible (flex-shrink) pour voir les items déborder leur conteneur.</p>
+<div class="ctnFlex C4">
+    <div class="item">Orange potato</div>
+    <div class="item">Sprout tomato pea</div>
+    <div class="item">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea.</div>
+</div>
+
+<h3>Exercice C5 - flex-shrink et flex-basis</h3>
+<p>Ajuster le flex-grow et le flex-basis pour que chaque item occupe la taille minimum de son contenu.</p>
+<div class="ctnFlex C5">
+    <div class="item">Orange potato</div>
+    <div class="item">Sprout tomato pea</div>
+    <div class="item">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea.</div>
+</div>
+
+<h3>Exercice C6 - width versus flex-basis</h3>
+<p>Ajouter un width ou un max-width de manière à ce que chaque boite soit de largeur égale (1/3).</p>
+<div class="ctnFlex C6">
+    <div class="item">Orange.</div>
+    <div class="item">Sprout tomato pea</div>
+    <div class="item">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea.</div>
+</div>
+
+<h3>Exercice C7 - flex-grow</h3>
+<p>Changer la valeur du flex-grow de manière à ce que la boite qui porte la classe "deux" TENTE d'occuper 2x plus d'espace que les 2 autres.</p>
+<div class="ctnFlex C7">
+    <div class="item deux">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+</div>
+
+<h3>Exercice C8- flex-grow</h3>
+<p>Changer la valeur du flex-grow de manière à ce que la boite qui porte la classe "deux" TENTE d'occuper 2x plus d'espace que les 2 autres.
+    <br>Cette fois, ajouter à tous les items un min-width de manière à ce que la proportion 2x plus que les 2 autres s'appliquent réellement.</p>
+<div class="ctnFlex C8">
+    <div class="item deux">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+</div>
+
+<h2>D. Les alignements (suite)</h2>
+<h3>Exercice D1</h3>
+<p>Le premier et le troisième item doivent s'aligner en haut à gauche. Le deuxième item doit se placer en bas à droite.</p>
+<div class="ctnFlex D1">
+    <div class="item">🍋</div>
+    <div class="item">🍒</div>
+    <div class="item">🥝</div>
+</div>
+
+<h3>Exercice D2</h3>
+<p>Pour créer une mise en page classique, compléter les règles. </p>
+<div class="ctnFlex D2">
+    <div class="header item">header</div>
+    <div class="aside1 item">aside 1</div>
+    <div class="aside2 item">aside 2</div>
+    <div class="main item"><h3>main</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sunt dolores voluptatum quia deleniti debitis dolore, pariatur sed quidem animi mollitia eveniet dignissimos perferendis quisquam corporis, vero officiis. Minus, ducimus! </p></div>
+    <div class="footer item">footer</div>
+</div>
+</body>
+</html>
