@@ -1,0 +1,12 @@
+{
+  "name": "katas-flexbox",
+  "version": "1.0.0",
+  "description": "Katas Flexbox - exercices CSS",
+  "scripts": {
+    "test": "node grader.js",
+    "grade": "node grader.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
