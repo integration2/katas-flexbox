@@ -4,11 +4,15 @@ on:
   push:
     branches: [main, master]
 
+permissions:
+  actions: read
+  contents: read
+
 jobs:
-  grade:
+  autograding:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -17,11 +21,229 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci || npm install
+      - name: Exercice A1 - justify-content
+        id: a1
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A1 - justify-content'
+          setup-command: 'npm ci || npm install && npx playwright install chromium --with-deps'
+          command: 'node tests/run.js A1'
+          timeout: '5'
+          max-score: '5'
 
-      - name: Install Playwright Chromium
-        run: npx playwright install chromium --with-deps
+      - name: Exercice A2 - flex-direction
+        id: a2
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A2 - flex-direction'
+          setup-command: ''
+          command: 'node tests/run.js A2'
+          timeout: '5'
+          max-score: '5'
 
-      - name: Run autograding tests
-        run: node tests/run-all-from-json.js
+      - name: Exercice A3 - justify-content space-between
+        id: a3
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A3 - justify-content space-between'
+          setup-command: ''
+          command: 'node tests/run.js A3'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice A4 - justify-content space-around
+        id: a4
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A4 - justify-content space-around'
+          setup-command: ''
+          command: 'node tests/run.js A4'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice A5 - flex-wrap et items
+        id: a5
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A5 - flex-wrap et items'
+          setup-command: ''
+          command: 'node tests/run.js A5'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice A6 - align-content
+        id: a6
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A6 - align-content'
+          setup-command: ''
+          command: 'node tests/run.js A6'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice A7 - align-content space-between
+        id: a7
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice A7 - align-content space-between'
+          setup-command: ''
+          command: 'node tests/run.js A7'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice B1 - margin-right
+        id: b1
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice B1 - margin-right'
+          setup-command: ''
+          command: 'node tests/run.js B1'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice B2 - centrage
+        id: b2
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice B2 - centrage'
+          setup-command: ''
+          command: 'node tests/run.js B2'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice B3 - marges automatiques
+        id: b3
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice B3 - marges automatiques'
+          setup-command: ''
+          command: 'node tests/run.js B3'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C1 - flex-basis
+        id: c1
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C1 - flex-basis'
+          setup-command: ''
+          command: 'node tests/run.js C1'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C2 - flex-grow
+        id: c2
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C2 - flex-grow'
+          setup-command: ''
+          command: 'node tests/run.js C2'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C3 - flex-basis auto
+        id: c3
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C3 - flex-basis auto'
+          setup-command: ''
+          command: 'node tests/run.js C3'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C4 - flex-shrink
+        id: c4
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C4 - flex-shrink'
+          setup-command: ''
+          command: 'node tests/run.js C4'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C5 - flex min content
+        id: c5
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C5 - flex min content'
+          setup-command: ''
+          command: 'node tests/run.js C5'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C6 - largeurs égales
+        id: c6
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C6 - largeurs égales'
+          setup-command: ''
+          command: 'node tests/run.js C6'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C7 - flex-grow classe deux
+        id: c7
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C7 - flex-grow classe deux'
+          setup-command: ''
+          command: 'node tests/run.js C7'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice C8 - flex-grow et min-width
+        id: c8
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice C8 - flex-grow et min-width'
+          setup-command: ''
+          command: 'node tests/run.js C8'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice D1 - alignement item 2
+        id: d1
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice D1 - alignement item 2'
+          setup-command: ''
+          command: 'node tests/run.js D1'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Exercice D2 - mise en page classique
+        id: d2
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: 'Exercice D2 - mise en page classique'
+          setup-command: ''
+          command: 'node tests/run.js D2'
+          timeout: '5'
+          max-score: '5'
+
+      - name: Autograding Reporter
+        if: always()
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          A1_RESULTS: ${{ steps.a1.outputs.result }}
+          A2_RESULTS: ${{ steps.a2.outputs.result }}
+          A3_RESULTS: ${{ steps.a3.outputs.result }}
+          A4_RESULTS: ${{ steps.a4.outputs.result }}
+          A5_RESULTS: ${{ steps.a5.outputs.result }}
+          A6_RESULTS: ${{ steps.a6.outputs.result }}
+          A7_RESULTS: ${{ steps.a7.outputs.result }}
+          B1_RESULTS: ${{ steps.b1.outputs.result }}
+          B2_RESULTS: ${{ steps.b2.outputs.result }}
+          B3_RESULTS: ${{ steps.b3.outputs.result }}
+          C1_RESULTS: ${{ steps.c1.outputs.result }}
+          C2_RESULTS: ${{ steps.c2.outputs.result }}
+          C3_RESULTS: ${{ steps.c3.outputs.result }}
+          C4_RESULTS: ${{ steps.c4.outputs.result }}
+          C5_RESULTS: ${{ steps.c5.outputs.result }}
+          C6_RESULTS: ${{ steps.c6.outputs.result }}
+          C7_RESULTS: ${{ steps.c7.outputs.result }}
+          C8_RESULTS: ${{ steps.c8.outputs.result }}
+          D1_RESULTS: ${{ steps.d1.outputs.result }}
+          D2_RESULTS: ${{ steps.d2.outputs.result }}
+        with:
+          runners: a1,a2,a3,a4,a5,a6,a7,b1,b2,b3,c1,c2,c3,c4,c5,c6,c7,c8,d1,d2
