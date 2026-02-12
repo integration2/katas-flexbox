@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Katas Flexbox - exercices CSS",
   "scripts": {
-    "test": "node grader.js",
-    "grade": "node grader.js"
+    "test": "node tests/run-all-from-json.js",
+    "grade": "node tests/run-all-from-json.js",
+    "test:single": "node tests/run.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0"

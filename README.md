@@ -102,6 +102,8 @@ Complétez les règles CSS pour obtenir une mise en page classique (header, asid
 - **`index.html`** : structure HTML et énoncés des exercices
 - **`katas.css`** : fichier où écrire vos solutions CSS
 - **`katas-flexbox-guide-visuel.pdf`** : guide visuel des rendus attendus
+- **`tests/`** : tests d’auto-évaluation (A/, B/, C/, D/ par section)
+- **`.github/classroom/autograding.json`** : configuration des tests pour GitHub Classroom
 
 Ouvrez `index.html` dans un navigateur pour voir vos résultats au fur et à mesure.
 
@@ -114,5 +116,7 @@ npm install
 npx playwright install chromium
 npm test
 ```
+
+Pour tester un seul exercice : `npm run test:single -- A1` (remplacez A1 par l’ID de l’exercice).
 
 Les tests s'exécutent aussi automatiquement à chaque push sur GitHub (via GitHub Classroom).

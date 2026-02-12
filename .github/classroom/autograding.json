@@ -1,0 +1,144 @@
+{
+  "tests": [
+    {
+      "name": "Exercice A1 - justify-content",
+      "setup": "npm ci || npm install && npx playwright install chromium --with-deps",
+      "run": "node tests/run.js A1",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice A2 - flex-direction",
+      "setup": "",
+      "run": "node tests/run.js A2",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice A3 - justify-content space-between",
+      "setup": "",
+      "run": "node tests/run.js A3",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice A4 - justify-content space-around",
+      "setup": "",
+      "run": "node tests/run.js A4",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice A5 - flex-wrap et items",
+      "setup": "",
+      "run": "node tests/run.js A5",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice A6 - align-content",
+      "setup": "",
+      "run": "node tests/run.js A6",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice A7 - align-content space-between",
+      "setup": "",
+      "run": "node tests/run.js A7",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice B1 - margin-right",
+      "setup": "",
+      "run": "node tests/run.js B1",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice B2 - centrage",
+      "setup": "",
+      "run": "node tests/run.js B2",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice B3 - marges automatiques",
+      "setup": "",
+      "run": "node tests/run.js B3",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C1 - flex-basis",
+      "setup": "",
+      "run": "node tests/run.js C1",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C2 - flex-grow",
+      "setup": "",
+      "run": "node tests/run.js C2",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C3 - flex-basis auto",
+      "setup": "",
+      "run": "node tests/run.js C3",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C4 - flex-shrink",
+      "setup": "",
+      "run": "node tests/run.js C4",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C5 - flex min content",
+      "setup": "",
+      "run": "node tests/run.js C5",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C6 - largeurs égales",
+      "setup": "",
+      "run": "node tests/run.js C6",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C7 - flex-grow classe deux",
+      "setup": "",
+      "run": "node tests/run.js C7",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice C8 - flex-grow et min-width",
+      "setup": "",
+      "run": "node tests/run.js C8",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice D1 - alignement item 2",
+      "setup": "",
+      "run": "node tests/run.js D1",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Exercice D2 - mise en page classique",
+      "setup": "",
+      "run": "node tests/run.js D2",
+      "timeout": 5,
+      "points": 5
+    }
+  ]
+}
